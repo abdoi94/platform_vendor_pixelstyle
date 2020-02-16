@@ -16,15 +16,9 @@ LOCAL_PATH := vendor/pixelstyle
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    NexusWallpapersStubPrebuilt2019Static \
     SettingsIntelligenceGooglePrebuilt \
     GooglePermissionControllerOverlay \
     PixelDocumentsUIGoogleOverlay
-
-ifeq ($(TARGET_GAPPS_ARCH),arm64)
-PRODUCT_PACKAGES += \
-    MatchmakerPrebuiltPixel4
-endif
 
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
